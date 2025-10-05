@@ -422,9 +422,24 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ## 👨‍💻 Autor
 
-**Marcelo** - Desenvolvedor Full Stack
+**Marcelo** - Estudante Desenvolvimento de Sistemas
 
-- GitHub: [@seu-usuario](https://github.com/marckcm)
+- GitHub: [@marckcm](https://github.com/marckcm)
+- Email: marckcmdesigner@gmail.com
+
+**Marcos** - Estudante Desenvolvimento de Sistemas
+
+- GitHub: [@marckcm](https://github.com/marckcm)
+- Email: marckcmdesigner@gmail.com
+
+**Gabriel** - Estudante Desenvolvimento de Sistemas
+
+- GitHub: [@marckcm](https://github.com/marckcm)
+- Email: marckcmdesigner@gmail.com
+
+**Rafael Rodrigues** - Estudante Desenvolvimento de Sistemas
+
+- GitHub: [@marckcm](https://github.com/marckcm)
 - Email: marckcmdesigner@gmail.com
 
 ## 🙏 Agradecimentos
