@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot de Atendimento</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <!-- Tailwind CSS: framework utilitário para estilização rápida -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- animações de scroll (efeitos visuais ao rolar a página) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ativa as animações de scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- biblioteca de ícones SVG -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Meu CSS personalizado para o site -->
+    <link href="static/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-gray-100 min-h-screen">
+    <header class="bg-blue-600 text-white py-6 shadow-lg">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <h1 class="text-2xl font-bold">Atendimento ao Cliente</h1>
+          <div>
+            <i data-feather="headphones" class="w-8 h-8"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+      <div
+        class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden"
+      >
+        <div class="p-6">
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">
+            Como podemos ajudar você hoje?
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Nosso chatbot está disponível 24 horas para responder suas dúvidas.
+          </p>
+
+          <!-- Interface do Chatbot -->
+          <div
+            class="chatbot-container bg-gray-50 rounded-lg p-4 h-96 overflow-y-auto flex flex-col space-y-3"
+          >
+            <div class="bot-message chatbot-message p-3 self-start">
+              <p>
+                Olá! Sou o assistente virtual. Como posso te ajudar hoje? 😊
+              </p>
+            </div>
+            <div class="bot-message chatbot-message p-3 self-start">
+              <p>Você pode me perguntar sobre:</p>
+              <ul class="list-disc pl-5 mt-2">
+                <li>Status do pedido</li>
+                <li>Informações sobre produtos</li>
+                <li>Problemas com sua conta</li>
+                <li>Devoluções e reembolsos</li>
+                <li>Garantia</li>
+                <li>Outros assuntos</li>
+              </ul>
+            </div>
+            <div
+              id="typing-indicator"
+              class="typing-indicator p-3 self-start hidden"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="mt-4 flex">
+            <input
+              type="text"
+              id="user-input"
+              placeholder="Digite sua mensagem..."
+              class="flex-1 px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              id="send-btn"
+              class="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition"
+            >
+              <i data-feather="send" class="w-5 h-5"></i>
+            </button>
+          </div>
+
+          <div class="mt-4 grid grid-cols-2 gap-2">
+            <button
+              class="quick-reply-btn bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded transition"
+            >
+              Status do pedido
+            </button>
+            <button
+              class="quick-reply-btn bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded transition"
+            >
+              Problemas com login
+            </button>
+            <button
+              class="quick-reply-btn bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded transition"
+            >
+              Informações de entrega
+            </button>
+            <button
+              class="quick-reply-btn bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded transition"
+            >
+              Falar com atendente
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <link
+              href="https://calendar.google.com/calendar/scheduling-button-script.css"
+              rel="stylesheet"
+            />
+            <script
+              src="https://calendar.google.com/calendar/scheduling-button-script.js"
+              async
+            ></script>
+            <script>
+              (function () {
+                var target = document.currentScript;
+                window.addEventListener("load", function () {
+                  calendar.schedulingButton.load({
+                    url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ34_bBQdiA0p9JR5AJATtA6EeX38MHRqUZ_anXmn11CBGcHlbDIlN6WMT3O4vZgR3-GMPS9s_Uw?gv=true",
+                    color: "#3b82f6",
+                    label: "Agendar um compromisso",
+                    target,
+                  });
+                });
+              })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->
+          </div>
+
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-lg font-semibold">Atendimento ao Cliente</h3>
+            <p class="text-gray-400">Disponível 24 horas por dia</p>
+          </div>
+          <div class="flex space-x-4">
+            <a
+              target="_blank"
+              href="https://wa.me/5532991381516?text=Olá,%20como%20posso%20ajudar?"
+              class="hover:text-blue-400 transition"
+            >
+              <i data-feather="phone" class="w-5 h-5"></i>
+            </a>
+            <a
+              href="mailto:marckcmdesigner@gmail.com"
+              class="hover:text-blue-400 transition"
+            >
+              <i data-feather="mail" class="w-5 h-5"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/g.i_imports18k/?igsh=MXJpbGUyaGNobXNoZw%3D%3D#"
+              class="hover:text-blue-400 transition"
+            >
+              <i data-feather="instagram" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="static/scrypt.js"></script>
+  </body>
+</html>
