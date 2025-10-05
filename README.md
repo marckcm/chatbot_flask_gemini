@@ -429,18 +429,18 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 **Marcos** - Estudante Desenvolvimento de Sistemas
 
-- GitHub: [@marckcm](https://github.com/marckcm)
-- Email: marckcmdesigner@gmail.com
+- GitHub: [@marcosjf07](https://github.com/marcosjf07)
+- Email: marcosvinixisto@gmail.com
 
 **Gabriel** - Estudante Desenvolvimento de Sistemas
 
-- GitHub: [@marckcm](https://github.com/marckcm)
-- Email: marckcmdesigner@gmail.com
+- GitHub: [@user](https://github.com/Gabriel-MGC)
+- Email: condegabriel703@gmail.com
 
 **Rafael Rodrigues** - Estudante Desenvolvimento de Sistemas
 
-- GitHub: [@marckcm](https://github.com/marckcm)
-- Email: marckcmdesigner@gmail.com
+- GitHub: [@user](https://github.com/user)
+- Email: user@gmail.com
 
 ## 🙏 Agradecimentos
 
